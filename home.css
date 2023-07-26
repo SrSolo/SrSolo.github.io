@@ -1,11 +1,17 @@
 /* Reset some margin and padding */
-body, h1, h2, h3, p {
+body,
+h1,
+h2,
+h3,
+p {
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: 'Futura', Arial, sans-serif;
+    background-color: #E6F2E9;
+    /* Light green background color for the whole page */
 }
 
 header {
@@ -28,13 +34,15 @@ header h1 {
 
 .first-name {
     font-size: 40px;
-    color: seagreen;
+    color: #1e8449;
+    /* Green color for first name */
     margin-left: -65px;
 }
 
 .last-name {
     font-size: 40px;
-    color: seagreen;
+    color: #1e8449;
+    /* Green color for last name */
     margin-left: -50px;
 }
 
@@ -48,26 +56,49 @@ section h2 {
 }
 
 section p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
 .projects-section {
+    margin: 0 auto;
+    /* Center the projects sections horizontally */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+/* Add colored rounded boxes for the sections */
+.builds-section {
+    background-color: #d4edda;
+    /* Green background color for Builds section */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* Add margin at the bottom */
+}
+
+.works-section {
+    background-color: #f8d7da;
+    /* Red background color for Works in Progress section */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* Add margin at the bottom */
 }
 
 .project {
     width: 48%;
     margin-bottom: 40px;
     display: flex;
-    align-items: center; /* Center the content vertically */
+    align-items: center;
+    /* Center the content vertically */
 }
 
 .project h3 {
     font-size: 24px;
-    color: #007BFF;
+    color: #1e8449;
+    /* Green color for project title */
 }
 
 .project p {
@@ -76,8 +107,10 @@ section p {
 
 .project-link {
     display: inline-block;
-    background-color: #007BFF;
+    background-color: #1e8449;
+    /* Green background color for project links */
     color: #fff;
+    /* White color for the link text */
     padding: 8px 12px;
     text-decoration: none;
     border-radius: 4px;
@@ -86,7 +119,8 @@ section p {
 
 .project-image {
     width: 50%;
-    margin-right: 20px; /* Add some spacing between the image and project info */
+    margin-right: 20px;
+    /* Add some spacing between the image and project info */
 }
 
 .project-image img {
@@ -95,9 +129,82 @@ section p {
     border-radius: 4px;
 }
 
+/* Add margin-top to the first project within each section */
+.projects-section .project:first-child {
+    margin-top: 20px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    /* Add margin at the bottom of section titles */
+}
+
 footer {
-    background-color: #333;
+    background-color: #1e8449;
+    /* Green background color for footer */
     color: #fff;
+    /* White color for footer text */
     text-align: center;
     padding: 20px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black background */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    /* White color for the link text */
+    text-decoration: none;
+    font-family: 'Futura', Arial, sans-serif;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #d4edda;
+    /* Green color for the link text on hover */
+}
+
+#resume-link {
+    position: fixed;
+    top: 100vh;
+    /* Start below the banner image */
+    left: 20px;
+    /* Adjust the left position as needed */
+    display: inline-block;
+    background-color: #1e8449;
+    /* Green background color for the "Resume" link */
+    color: #fff;
+    /* White color for the link text */
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: 'Futura', Arial, sans-serif;
+    font-size: 18px;
+    opacity: 0;
+    /* Hide the link initially */
+    transition: opacity 0.5s ease;
+    /* Smooth transition for opacity change */
+    z-index: 1;
+    /* Make sure the link stays on top of other elements */
+}
+
+#resume-link.visible {
+    opacity: 1;
+    /* Show the link when it becomes visible */
 }

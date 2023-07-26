@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="app">
 
@@ -32,17 +34,15 @@
 
         <section>
             <h2>Hey! I build things and go outside</h2>
-           
         </section>
 
-        <!-- Resume section -->
-        <section id="resume">
-            <!-- Your resume content goes here -->
-        </section>
 
-        <section class="projects-section">
-            <h2>Builds</h2>
+        <div id="resume-link">
+            <router-link to="/resume">Resume</router-link>
+        </div>
 
+        <section class="projects-section builds-section">
+            <h2 class="section-title">Builds</h2>
             <!-- Gen It project -->
             <div class="project">
                 <div class="project-image">
@@ -51,7 +51,8 @@
                 <div class="project-info">
                     <h3>Gen It</h3>
                     <p>
-                        Gen It is a website that generates images based on a provided API key and prompt. Users can input their API key and a prompt, and the website will use the API to create and display images.
+                        Gen It is a website that generates images based on a provided API key and prompt. Users can
+                        input their API key and a prompt, and the website will use the API to create and display images.
                     </p>
                     <a href="https://gen-it-srsolo.vercel.app/" class="project-link">View Site</a>
                     <a href="https://github.com/SrSolo/gen-it" class="project-link">GitHub</a>
@@ -66,7 +67,9 @@
                 <div class="project-info">
                     <h3>Yeek</h3>
                     <p>
-                        Yeek is a website that generates personalized training plans for runners. Users can input their criteria, such as distance, pace, and training frequency, and Yeek will generate a custom plan to help them achieve their running goals.
+                        Yeek is a website that generates personalized training plans for runners. Users can input their
+                        criteria, such as distance, pace, and training frequency, and Yeek will generate a custom plan
+                        to help them achieve their running goals.
                     </p>
                     <a href="https://yeek-srsolo.vercel.app/" class="project-link">View Site</a>
                     <a href="https://github.com/SrSolo/yeek" class="project-link">GitHub</a>
@@ -75,37 +78,36 @@
 
         </section>
 
-        <section>
-            <h2>Works in Progress</h2>
+        <section class="projects-section works-section">
+            <h2 class="section-title">Works in Progress</h2>
+            <!-- Wonkify -->
 
-            <!-- Wonkify project -->
             <div class="project">
-                <div class="project-image">
-                    <!-- Add image here if available -->
-                </div>
                 <div class="project-info">
-                    <h3>Wonkify (Work in Progress)</h3>
+                    <h3>Wonkify</h3>
                     <p>
-                        Wonkify is a Spotify web app that provides music suggestions that are the most opposite to the user's current listening habits. It offers a unique way to explore new music and broaden one's musical taste.
+                        Wonkify is a Spotify web app that provides music suggestions that are the most opposite to the
+                        user's current listening habits. It offers a unique way to explore new music and broaden one's
+                        musical taste.
                     </p>
                     <a href="https://github.com/SrSolo/wonkify" class="project-link">GitHub</a>
                 </div>
             </div>
 
-            <!-- Schedulizer project -->
+            <!-- Schedulizer  -->
+
             <div class="project">
-                <div class="project-image">
-                    <!-- Add image here if available -->
-                </div>
                 <div class="project-info">
-                    <h3>Schedulizer (Work in Progress)</h3>
+                    <h3>Schedulizer</h3>
                     <p>
-                        Schedulizer is a web app designed for WashU students. It allows students to convert their class schedule from a PDF format to the iCal format, making it easier to manage and integrate with their calendar apps.
+                        Schedulizer is a web app designed for WashU students. It allows students to convert their class
+                        schedule from a PDF format to the iCal format, making it easier to manage and integrate with
+                        their calendar apps.
                     </p>
                     <a href="https://github.com/SrSolo/wustl-schedulizer" class="project-link">GitHub</a>
                 </div>
-            </div>
 
+            </div>
         </section>
 
         <section>
@@ -119,5 +121,18 @@
             &copy; 2023 Sebastian Solorzano. All rights reserved.
         </footer>
     </div>
+    <script>
+        const resumeLink = document.getElementById('resume-link');
+
+        window.addEventListener('scroll', function () {
+            const bannerHeight = document.getElementById('hero').offsetHeight;
+            if (window.scrollY >= bannerHeight) {
+                resumeLink.classList.add('visible');
+            } else {
+                resumeLink.classList.remove('visible');
+            }
+        });
+    </script>
 </body>
+
 </html>
