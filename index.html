@@ -13,13 +13,7 @@
 <body>
     <div id="app">
 
-        <!-- Navbar component -->
-        <nav>
-            <ul>
-                <li><a href="#resume">Resume</a></li>
-                <!-- Add more navigation links here if needed -->
-            </ul>
-        </nav>
+
 
         <header id="hero">
             <div class="hero-content">
@@ -37,13 +31,11 @@
         </section>
 
 
-        <div id="resume-link">
-            <router-link to="/resume">Resume</router-link>
-        </div>
+
 
         <section class="projects-section builds-section">
             <h2 class="section-title">Builds</h2>
-            <!-- Gen It project -->
+            <!-- Build 1 -->
             <div class="project">
                 <div class="project-image">
                     <img src="genit.png" alt="Gen It Project Image">
@@ -59,11 +51,8 @@
                 </div>
             </div>
 
-            <!-- Yeek project -->
-            <div class="project">
-                <div class="project-image">
-                    <img src="yeek-image.png" alt="Yeek Project Image">
-                </div>
+            <!-- Build 2 -->
+            <div class="project reverse">
                 <div class="project-info">
                     <h3>Yeek</h3>
                     <p>
@@ -74,8 +63,10 @@
                     <a href="https://yeek-srsolo.vercel.app/" class="project-link">View Site</a>
                     <a href="https://github.com/SrSolo/yeek" class="project-link">GitHub</a>
                 </div>
+                <div class="project-image">
+                    <img src="yeek-image.png" alt="Yeek Project Image">
+                </div>
             </div>
-
         </section>
 
         <section class="projects-section works-section">
@@ -109,24 +100,45 @@
 
             </div>
         </section>
+        <section class="written-works-section">
+            <h2 class="section-title">Written Works</h2>
+            <div class="written-works">
+                <a href="https://sebrsolo.notion.site/Tracksmith-Growth-and-Future-0685ca5a3fbb477aaa1f8821964615c2?pvs=4"
+                    class="written-work-card">
+                    <img src="tracksmithheader.jpg" alt="Tracksmith Growth and Future Thumbnail">
+                    <h3>Tracksmith Growth and Future</h3>
+                    <p>my thoughts on tracksmith's brand and growth</p>
+                </a>
+                <a href="https://sebrsolo.notion.site/Running-1-to-10-36ff982f91d44a4194f15ddbff58bf2f?pvs=4"
+                    class="written-work-card">
+                    <img src="1to10header.png" alt="Running 1 to 10 Thumbnail">
+                    <h3>Running 1 to 10</h3>
+                    <p>my thoughts on how to start running</p>
+                </a>
+                <!-- Add more written work cards as needed -->
+            </div>
+        </section>
 
         <section>
-            <h2>Contact Me</h2>
-            <p>
-                You can reach me at sebsolo953@gmail.com or connect with me on social media.
-            </p>
+            <div class="contact-links">
+                <a href="mailto:sebsolo953@gmail.com">email</a> |
+                <a href="https://www.linkedin.com/">linkedin</a>
+            </div>
         </section>
 
         <footer>
             &copy; 2023 Sebastian Solorzano. All rights reserved.
         </footer>
+        <router-link to="/resume" id="resume-link">Resume</router-link>
     </div>
+
     <script>
         const resumeLink = document.getElementById('resume-link');
 
         window.addEventListener('scroll', function () {
             const bannerHeight = document.getElementById('hero').offsetHeight;
-            if (window.scrollY >= bannerHeight) {
+            const resumeStart = bannerHeight - 100; // Adjust this value to fine-tune the starting position
+            if (window.scrollY >= resumeStart) {
                 resumeLink.classList.add('visible');
             } else {
                 resumeLink.classList.remove('visible');
