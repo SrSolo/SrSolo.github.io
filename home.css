@@ -69,6 +69,7 @@ section p {
 }
 
 /* Add colored rounded boxes for the sections */
+
 .builds-section {
     background-color: #d4edda;
     /* Green background color for Builds section */
@@ -76,6 +77,9 @@ section p {
     padding: 20px;
     margin-bottom: 20px;
     /* Add margin at the bottom */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .works-section {
@@ -157,7 +161,7 @@ section p {
 
 
 .project {
-    width: 100%;
+    width: 80%;
     margin-bottom: 40px;
     display: flex;
     align-items: center;
@@ -165,10 +169,16 @@ section p {
 }
 
 .project-image {
-    width: 50%;
-    /* Adjust the width as needed */
-    margin-right: 20px;
+    width: 40%;
+    margin-right: 5%;
+    margin-left: 5%;
     /* Add some spacing between the image and project info */
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
 .project-info {
@@ -203,6 +213,8 @@ section p {
 
 .project p {
     font-size: 16px;
+    margin-top: 10px;
+    /* Add margin at the top of the project text */
 }
 
 .project-link {
