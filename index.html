@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Personal Website</title>
+    <title>Sebastian Solorzano</title>
     <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 
 
         <header id="hero">
-            <div class="hero-content">
+            <div class="hero-content name-box">
                 <h1>
                     <span class="first-name">Seb<br>
                     </span>astian <br>
@@ -25,6 +25,9 @@
                 </h1>
             </div>
         </header>
+
+
+
 
         <section>
             <h2>Hey! I build things and go outside</h2>
@@ -40,14 +43,14 @@
                 <div class="project-info">
                     <h3>Gen It</h3>
                     <p>
-                        Gen It is a website that generates images based on a provided API key and prompt. Users can
-                        input their API key and a prompt, and the website will use the API to create and display images.
+                        Gen It simplifies image generation for OpenAi paid API users. Enjoy a photo my girlfriend
+                        requested be generated
                     </p>
                     <a href="https://gen-it-srsolo.vercel.app/" class="project-link">View Site</a>
                     <a href="https://github.com/SrSolo/gen-it" class="project-link">GitHub</a>
                 </div>
                 <div class="project-image">
-                    <img src="genit.png" alt="Gen It Project Image">
+                    <img src="genit.jpg" alt="Gen It Project Image">
                 </div>
             </div>
 
@@ -56,9 +59,9 @@
                 <div class="project-info">
                     <h3>Yeek</h3>
                     <p>
-                        Yeek is a website that generates personalized training plans for runners. Users can input their
-                        criteria, such as distance, pace, and training frequency, and Yeek will generate a custom plan
-                        to help them achieve their running goals.
+                        Yeek is a website that generates personalized training plans for runners based on
+                        criteria, such as distance, pace, and training frequency. I plan to finetune a GPT 3.5 model to
+                        provide even stronger plans once possible.
                     </p>
                     <a href="https://yeek-srsolo.vercel.app/" class="project-link">View Site</a>
                     <a href="https://github.com/SrSolo/yeek" class="project-link">GitHub</a>
@@ -87,7 +90,7 @@
 
             <!-- Schedulizer  -->
 
-            <div class="project">
+            <div class="project reverse">
                 <div class="project-info">
                     <h3>Schedulizer</h3>
                     <p>
@@ -97,7 +100,12 @@
                     </p>
                     <a href="https://github.com/SrSolo/wustl-schedulizer" class="project-link">GitHub</a>
                 </div>
-
+            </div>
+            <div class="something-new">
+                <h3>Something new?</h3>
+                <p>
+                    hmmmmm
+                </p>
             </div>
         </section>
         <section class="written-works-section">
@@ -115,7 +123,7 @@
                     <h3>Running 1 to 10</h3>
                     <p>my thoughts on how to start running</p>
                 </a>
-                <!-- Add more written work cards as needed -->
+
             </div>
         </section>
 
@@ -133,19 +141,7 @@
         <router-link to=" /resume" id="resume-link">Resume</router-link>
     </div>
 
-    <script>
-        const resumeLink = document.getElementById('resume-link');
-
-        window.addEventListener('scroll', function () {
-            const bannerHeight = document.getElementById('hero').offsetHeight;
-            const resumeStart = bannerHeight - 100; // Adjust this value to fine-tune the starting position
-            if (window.scrollY >= resumeStart) {
-                resumeLink.classList.add('visible');
-            } else {
-                resumeLink.classList.remove('visible');
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

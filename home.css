@@ -26,11 +26,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 header h1 {
     font-size: 48px;
 }
+
 
 .first-name {
     font-size: 40px;
@@ -175,6 +177,18 @@ section p {
     /* Add some spacing between the image and project info */
 }
 
+.something-new {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works-section .project:first-child {
+    margin-top: 20px;
+}
+
 .project-image img {
     width: 100%;
     height: auto;
@@ -256,12 +270,18 @@ nav {
     background-color: rgba(0, 0, 0, 0.8);
     /* Semi-transparent black background */
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 nav li {
@@ -280,6 +300,41 @@ nav a:hover {
     color: #d4edda;
     /* Green color for the link text on hover */
 }
+
+
+
+/* .floating-text {
+    position: fixed;
+    top: -10px;
+    
+    right: 80px;
+    
+    white-space: nowrap;
+}
+
+.text1,
+.text2 {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text1 {
+    color: #FF0000;
+   
+
+.text2 {
+    color: #0000FF;
+   
+} */
+
+
+#app {
+    position: relative;
+}
+
+
 
 #resume-link {
     position: fixed;
