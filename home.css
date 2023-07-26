@@ -1,0 +1,103 @@
+/* Reset some margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Futura', Arial, sans-serif;
+}
+
+header {
+    background-image: url("IMG_8135.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    height: 70vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+.first-name {
+    font-size: 40px;
+    color: seagreen;
+    margin-left: -65px;
+}
+
+.last-name {
+    font-size: 40px;
+    color: seagreen;
+    margin-left: -50px;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    width: 48%;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center; /* Center the content vertically */
+}
+
+.project h3 {
+    font-size: 24px;
+    color: #007BFF;
+}
+
+.project p {
+    font-size: 16px;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.project-image {
+    width: 50%;
+    margin-right: 20px; /* Add some spacing between the image and project info */
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
