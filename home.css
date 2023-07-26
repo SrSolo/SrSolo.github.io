@@ -1,4 +1,3 @@
-/* Reset some margin and padding */
 body,
 h1,
 h2,
@@ -11,7 +10,7 @@ p {
 body {
     font-family: 'Futura', Arial, sans-serif;
     background-color: #E6F2E9;
-    /* Light green background color for the whole page */
+
 }
 
 header {
@@ -37,14 +36,14 @@ header h1 {
 .first-name {
     font-size: 40px;
     color: #1e8449;
-    /* Green color for first name */
+
     margin-left: -65px;
 }
 
 .last-name {
     font-size: 40px;
     color: #1e8449;
-    /* Green color for last name */
+
     margin-left: -50px;
 }
 
@@ -64,21 +63,21 @@ section p {
 
 .projects-section {
     margin: 0 auto;
-    /* Center the projects sections horizontally */
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/* Add colored rounded boxes for the sections */
+
 
 .builds-section {
     background-color: #d4edda;
-    /* Green background color for Builds section */
+
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    /* Add margin at the bottom */
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -86,17 +85,17 @@ section p {
 
 .works-section {
     background-color: #f8d7da;
-    /* Red background color for Works in Progress section */
+
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    /* Add margin at the bottom */
+
 }
 
 
 .written-works-section {
     background-color: #f8f8f8;
-    /* Light gray background color for the written works section */
+
     padding: 40px;
     text-align: center;
 }
@@ -114,10 +113,10 @@ section p {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    /* White background color for the cards */
+
     text-decoration: none;
     color: #1e8449;
-    /* Green color for the text */
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,18 +146,17 @@ section p {
     margin-top: 20px;
     font-size: 18px;
     color: #1e8449;
-    /* Green color for the links */
+
 }
 
 .contact-links a {
     color: #1e8449;
-    /* Green color for the links */
+
     text-decoration: none;
 }
 
 .contact-links a:hover {
     text-decoration: underline;
-    /* Underline the links on hover */
 }
 
 
@@ -167,14 +165,14 @@ section p {
     margin-bottom: 40px;
     display: flex;
     align-items: center;
-    /* Center the content vertically */
+
 }
 
 .project-image {
     width: 40%;
     margin-right: 5%;
     margin-left: 5%;
-    /* Add some spacing between the image and project info */
+
 }
 
 .something-new {
@@ -197,12 +195,12 @@ section p {
 
 .project-info {
     width: 50%;
-    /* Adjust the width as needed */
+
 }
 
 .project.reverse {
     flex-direction: row-reverse;
-    /* Reverse the order of flex items for alternating layout */
+
 }
 
 /* Add a media query to adjust the layout on smaller screens if needed */
@@ -222,42 +220,38 @@ section p {
 .project h3 {
     font-size: 24px;
     color: #1e8449;
-    /* Green color for project title */
+
 }
 
 .project p {
     font-size: 16px;
     margin-top: 10px;
-    /* Add margin at the top of the project text */
+
 }
 
 .project-link {
     display: inline-block;
     background-color: #1e8449;
-    /* Green background color for project links */
+
     color: #fff;
-    /* White color for the link text */
+
     padding: 8px 12px;
     text-decoration: none;
     border-radius: 4px;
     margin-top: 10px;
 }
 
-/* Add margin-top to the first project within each section */
 .projects-section .project:first-child {
     margin-top: 20px;
 }
 
 .section-title {
     margin-bottom: 20px;
-    /* Add margin at the bottom of section titles */
 }
 
 footer {
     background-color: #1e8449;
-    /* Green background color for footer */
     color: #fff;
-    /* White color for footer text */
     text-align: center;
     padding: 20px;
 }
@@ -268,7 +262,6 @@ nav {
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    /* Semi-transparent black background */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -290,7 +283,6 @@ nav li {
 
 nav a {
     color: #fff;
-    /* White color for the link text */
     text-decoration: none;
     font-family: 'Futura', Arial, sans-serif;
     font-size: 18px;
@@ -298,7 +290,6 @@ nav a {
 
 nav a:hover {
     color: #d4edda;
-    /* Green color for the link text on hover */
 }
 
 
@@ -335,31 +326,23 @@ nav a:hover {
 }
 
 
-
+/* 
 #resume-link {
     position: fixed;
     top: 100vh;
-    /* Start below the banner image */
     left: 20px;
-    /* Adjust the left position as needed */
     display: inline-block;
     background-color: #1e8449;
-    /* Green background color for the "Resume" link */
     color: #fff;
-    /* White color for the link text */
     padding: 8px 12px;
     border-radius: 4px;
     font-family: 'Futura', Arial, sans-serif;
     font-size: 18px;
     opacity: 0;
-    /* Hide the link initially */
     transition: opacity 0.5s ease;
-    /* Smooth transition for opacity change */
     z-index: 1;
-    /* Make sure the link stays on top of other elements */
 }
 
 #resume-link.visible {
     opacity: 1;
-    /* Show the link when it becomes visible */
-}
+} */
