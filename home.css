@@ -198,10 +198,7 @@ section p {
 
 }
 
-.project.reverse {
-    flex-direction: row-reverse;
 
-}
 
 /* Add a media query to adjust the layout on smaller screens if needed */
 @media screen and (max-width: 768px) {
